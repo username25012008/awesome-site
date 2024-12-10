@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome-UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/fav_logo.png" type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            l_brown: '#FCF9F6',
+            gray: '#333333',
+            l_white: '#FEFEFE',
+            l_gray: '#4F4F4F',
+            gold: '#F3B562',
+            green: '#647B64',
+          },
+          screens: {
+            xs: "370px",
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+          fontSize: {
+            xxs: '10px',
+
+          }
+        },
+      },
+    };
+  </script>
+  <style>
+    .circle {
+      background: linear-gradient(197.92deg, rgba(239, 128, 49, 0) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0) 103.02%);
+      transform: rotate(150deg);
+    }
+
+    .squer {
+      background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+    }
+
+    .btn-up_hide {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="bg-l_brown sticky top-0 shadow z-50">
+    <div class="font-inter mx-auto w-4/5 flex justify-between items-center py-8 max-xs:py-4">
+      <img src="./assets/logo_svg.svg" alt="" class="w-[209.75px] max-xs:w-[138.44px]" />
+      <ul class="flex justify-between items-center max-xs:hidden gap-3">
+        <li class="font-medium text-gray text-base py-3 px-4 cursor-pointer hover:bg-green hover:text-white hover:rounded-[8px] ease-out duration-300">About Us</li>
+        <li class="font-medium text-gray text-base py-3 px-4 cursor-pointer hover:bg-green hover:text-white hover:rounded-[8px] ease-out duration-300">Contact Us</li>
+        <li class="font-medium text-gray text-base py-3 px-4 cursor-pointer hover:bg-green hover:text-white hover:rounded-[8px] ease-out duration-300">Store</li>
+        <li class="font-medium text-gray text-base py-3 px-4 cursor-pointer hover:bg-green hover:text-white hover:rounded-[8px] ease-out duration-300">Use Cases</li>
+        <li
+          class="ml-12 font-medium text-l_white text-base rounded bg-gradient-to-r from-[#647B64] to-[#66AC66] active:bg-gradient-to-l py-3 px-4">
+          Register</li>
+      </ul>
+      <div class="w-7 h-7 py-[6px] px-[3.5px] flex flex-col justify-between xs:hidden max-xs:flex">
+        <div class="bg-[#222B45] w-[50%] h-[2.33px]"></div>
+        <div class="bg-[#222B45] w-full h-[2.33px]"></div>
+        <div class="bg-[#222B45] w-[50%] h-[2.33px] ml-[10.5px]"></div>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="btn-up btn-up_hide fixed bg-green right-[40px] bottom-[40px] max-xs:right-[20px] max-xs:bottom-[20px] rounded-full cursor-pointer w-16 h-16 max-xs:w-12 max-xs:h-12 flex justify-center items-center">
+    <i class="fa-solid fa-arrow-up text-3xl max-xs:text-sm text-white"></i>
+  </div>
+  <header class="bg-l_brown">
+    <div class="font-inter mx-auto w-4/5 flex justify-between items-center pt-8">
+      <div class="w-[495px]  max-xs:w-full">
+        <h1 class="text-5xl w-full text-gray font-medium max-xs:text-2xl">Lorem ipsum dolor sit amet, consectetur</h1>
+        <p class="mt-6 text-xl w-[479px] text-l_gray font-normal tracking-wider max-xs:w-full max-xs:text-xs">Lorem
+          ipsum dolor sit amet, consectetur
+          adipiscing elit.
+          Augue et
+          eros, pellentesque et. Tristique
+          ullamcorper ac pharetra in nisi sit vivamus lorem. </p>
+        <div
+          class="text-l_white mt-8 flex items-center justify-between w-[350px] max-xs:w-[224px] rounded bg-gradient-to-r from-[#647B64] to-[#66AC66] active:bg-gradient-to-l shadow-2xl px-7 pt-7 pb-1 max-xs:py-4 max-xs:px-5">
+          <button class="font-black text-base w-[105px] text-start max-xs:w-full max-xs:text-sm">GET STARTED</button>
+          <i class="fa-solid fa-arrow-right text-3xl max-xs:text-sm"></i>
+        </div>
+
+      </div>
+      <div class="relative max-xs:hidden">
+        <img src="./assets/girl-tennis.png" alt="girl-tennis" class="w-[343px] relative z-10">
+        <div class="circle rounded-full w-[184px] h-[184px] absolute top-[100px] z-[0]"></div>
+      </div>
+    </div>
+  </header>
+  <section class="bg-l_brown">
+    <div class="font-inter w-[90%] flex justify-between pt-[140px] mr-[151.925px] max-xs:flex-col">
+      <div class="w-[552px] max-xs:w-[258px]">
+        <div class="squer pl-[151.925px] max-xs:pl-8"><span
+            class="mt-10 text-2xl text-gold uppercase font-medium max-xs:text-sm">MOT
+            consectet</span>
+          <h1 class="uppercase pt-5 text-[41px] font-medium text-green max-xs:text-xl max-xs:pt-2">amet,consectet</h1>
+        </div>
+        <div class="pl-[151.925px] max-xs:pl-8">
+          <p class="text-base w-[412px] text-l_gray font-normal mt-8 max-xs:mt-24px max-xs:w-full max-xs:text-xs">Lorem
+            ipsum dolor sit amet, consectetur adipiscing
+            elit.
+            Sit
+            quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum
+            vitae.
+            Et velit sceleris</p>
+          <div
+            class="text-start text-l_white mt-8 flex items-center justify-between w-[350px] max-xs:w-[195px] rounded bg-gradient-to-r from-[#647B64] to-[#66AC66] active:bg-gradient-to-l shadow-2xl px-7 pt-7 pb-1 max-xs:px-[12px] max-xs:py-[10px]">
+            <button class="font-black text-base w-[105px] text-start max-xs:text-xs">GET STARTED</button>
+            <i class="fa-solid fa-arrow-right text-3xl max-xs:text-sm"></i>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-rows-2 grid-cols-2 w-[600px] mt-10 gap-10 group max-xs:w-full max-xs:pl-8 max-xs:gap-2">
+        <div
+          class="w-[288px] group/one h-[237px] pt-10 pl-10 pr-6 hover:bg-white ease-in duration-300 hover:shadow-2xl rounded-[8px] max-xs:w-[140px] max-xs:pt-5 max-xs:pl-5 max-xs:pr-2  max-xs:h-auto max-xs:pb-6">
+          <div
+            class="rounded-[8px] bg-white group-hover/one:bg-green ease-out duration-300 flex justify-center items-center inline-block w-12 h-12 max-xs:w-6 max-xs:h-6  shadow-lg ">
+            <i class="text-[28px] max-xs:text-[15px] text-green group-hover/one:text-white fa-solid fa-car-on "></i>
+          </div>
+          <h1 class="text-2xl text-gray font-medium max-xs:text-base mt-4 max-xs:mt-2">Car Rental</h1>
+          <p class="text-sm text-l_gray font-normal mt-2 max-xs:text-xs max-xs:mt-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sit
+            quis vitae </p>
+        </div>
+        <div
+          class="w-[288px] group/two h-[237px] pt-10 pl-10 pr-6 hover:bg-white ease-in duration-300 hover:shadow-2xl rounded-[8px] max-xs:w-[140px] max-xs:pt-5 max-xs:pl-5 max-xs:pr-2  max-xs:h-auto max-xs:pb-6">
+          <div
+            class="rounded-[8px] bg-white group-hover/two:bg-green ease-out duration-300 flex justify-center items-center inline-block w-12 h-12 max-xs:w-6 max-xs:h-6  shadow-lg">
+            <i class="text-[28px] max-xs:text-[15px] text-green group-hover/two:text-white fa-solid fa-ship "></i>
+          </div>
+          <h1 class="text-2xl text-gray font-medium max-xs:text-base mt-4 max-xs:mt-2">Boat Cruise</h1>
+          <p class="text-sm text-l_gray font-normal mt-2 max-xs:text-xs max-xs:mt-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sit
+            quis vitae </p>
+        </div>
+        <div
+          class="w-[288px] group/three h-[237px] pt-10 pl-10 pr-6 hover:bg-white ease-in duration-300 hover:shadow-2xl rounded-[8px] max-xs:w-[140px]  max-xs:pt-5 max-xs:pl-5 max-xs:pr-2 max-xs:h-auto max-xs:pb-6">
+          <div
+            class="rounded-[8px] bg-white group-hover/three:bg-green ease-out duration-300 flex justify-center items-center inline-block w-12 h-12 max-xs:w-6 max-xs:h-6  shadow-lg ">
+            <i
+              class="text-[28px] max-xs:text-[15px] text-green group-hover/three:text-white fa-solid fa-train-subway "></i>
+          </div>
+          <h1 class="text-2xl text-gray font-medium max-xs:text-base mt-4 max-xs:mt-2">Bus Trip</h1>
+          <p class="text-sm text-l_gray font-normal mt-2 max-xs:text-xs max-xs:mt-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sit
+            quis vitae </p>
+        </div>
+        <div
+          class="w-[288px] group/four h-[237px] pt-10 pl-10 pr-6 hover:bg-white ease-in duration-300 hover:shadow-2xl rounded-[8px] max-xs:w-[140px] max-xs:pt-5 max-xs:pl-5 max-xs:pr-2  max-xs:h-auto max-xs:pb-6">
+          <div
+            class="rounded-[8px] bg-white group-hover/four:bg-green ease-in duration-300 flex justify-center items-center inline-block w-12 h-12 max-xs:w-6 max-xs:h-6  shadow-lg ">
+            <i class="text-[28px] max-xs:text-[15px] text-green group-hover/four:text-white fa-solid fa-car-side "></i>
+          </div>
+          <h1 class="text-2xl text-gray font-medium max-xs:text-base mt-4 max-xs:mt-2">Road Trip</h1>
+          <p class="text-sm text-l_gray font-normal mt-2 max-xs:text-xs max-xs:mt-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sit
+            quis vitae </p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="py-28 font-inter mx-auto w-4/5 max-xs:py-12">
+        <h2 class="text-center mt-10 text-2xl text-gold uppercase font-medium max-xs:text-sm">MOT consectet</h2>
+        <h1 class="text-center uppercase pt-5 text-[41px] font-medium text-green max-xs:text-xl max-xs:pt-2">
+          amet,consectet iquet</h1>
+        <div class="flex justify-between items-center gap-10 mt-14  max-xs:gap-3 max-xs:mt-8">
+          <div
+            class="py-[70px] max-xs:py-[25px] px-[50px] max-xs:px-[15px] bg-gradient-to-b from-white via-[#647B6400] via-80% to-[#647B64C4] w-[33.3%] h-[338px] bg-white intosh group hover:bg-gradient-to-b-none hover:from-green hover:to-green transition ease-out duration-300 rounded-[8px] max-xs:w-[50%] max-xs:h-auto">
+            <i
+              class="text-6xl fa-brands fa-python text-green group-hover:text-white ease-out duration-300 max-xs:text-2xl"></i>
+            <h1
+              class="text-2xl max-xs:text-xs text-gray font-medium mt-6 max-xs:mt-2 group-hover:text-white ease-out duration-300">
+              MOT consectet
+            </h1>
+            <p
+              class="text-sm text-l_gray font-medium mt-2 group-hover:text-white ease-out duration-300 tracking-wider max-xs:text-xxs max-xs:tracking-wide">
+              Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Sit quis vitae </p>
+          </div>
+          <div
+            class=" py-[70px] max-xs:py-[25px] px-[50px] max-xs:px-[15px] bg-gradient-to-b from-white via-[#647B6400] via-80% to-[#647B64C4] w-[33.3%] h-[338px] bg-white intosh group/two hover:bg-gradient-to-b-none hover:from-green hover:to-green transition ease-out duration-300 rounded-[8px] max-xs:w-[50%] max-xs:h-auto">
+            <i
+              class="text-6xl fa-solid fa-atom text-green group-hover/two:text-white ease-out duration-300 max-xs:text-2xl"></i>
+            <h1
+              class="text-2xl max-xs:text-xs text-gray font-medium mt-6 max-xs:mt-2 group-hover/two:text-white ease-out duration-300">
+              MOT
+              consectet</h1>
+            <p
+              class="text-sm text-l_gray font-medium mt-2 group-hover/two:text-white ease-out duration-300 tracking-wider max-xs:text-xxs max-xs:tracking-wide">
+              Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+          </div>
+          <div
+            class="py-[70px] px-[50px] bg-gradient-to-b from-white via-[#647B6400] via-80% to-[#647B64C4] w-[33.3%] h-[338px] bg-white intosh group/three hover:bg-gradient-to-b-none hover:from-green hover:to-green transition ease-in duration-300 rounded-[8px] max-xs:hidden">
+            <i class="text-6xl fa-solid fa-minimize text-green group-hover/three:text-white ease-out duration-300"></i>
+            <h1 class="text-2xl text-gray font-medium mt-6 group-hover/three:text-white ease-out duration-300">MOT
+              consectet</h1>
+            <p
+              class="text-sm text-l_gray font-medium mt-2 group-hover/three:text-white ease-out duration-300 tracking-wider">
+              Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Sit quis vitae </p>
+          </div>
+        </div>
+        <div class="py-28 flex justify-between items-center max-xs:py-12">
+          <div
+            class="bg-gradient-to-b from-[#EF803126] to-l_brown relative w-[563px] h-[545px] ml-[77px] mt-[77px] max-xs:hidden">
+            <img src="./assets/company.png" alt="company" class="w-full absolute top-[-50px] left-[-50px]">
+          </div>
+          <div class="w-[45%] max-xs:w-[100%]">
+            <h2 class="text-2xl text-gold uppercase font-medium max-xs:text-sm">MOT consectet</h2>
+            <h1 class="uppercase mt-5 text-[41px] font-medium text-green max-xs:text-xl max-xs:mt-2">amet,consectet
+            </h1>
+            <p
+              class="mt-6 text-base w-[479px] text-l_gray font-normal tracking-wider max-xs:text-xs max-xs:w-full max-xs:mt-4">
+              Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim
+              quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+            <div
+              class="text-start text-l_white mt-8 max-xs:mt-6 flex items-center justify-between w-[350px] rounded bg-gradient-to-r from-[#647B64] to-[#66AC66] active:bg-gradient-to-l shadow-2xl px-7 pt-7 pb-1 max-xs:w-[224px] max-xs:px-[12px] max-xs:py-[10px]">
+              <button class="font-black text-base w-[105px] text-start max-xs:w-full max-xs:text-sm">GET
+                STARTED</button>
+              <i class="fa-solid fa-arrow-right text-3xl max-xs:text-sm"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mt-28">
+          <div class="text-start">
+            <h2 class="text-2xl text-gold uppercase font-medium max-xs:text-sm">MOT consectet</h2>
+            <h1 class="uppercase mt-5 text-[41px] font-medium text-green max-xs:text-xl max-xs:pt-2">amet,consectet Sit
+              quis</h1>
+          </div>
+          <div class="flex justify-between mt-[50px] max-xs:flex-col gap-4">
+            <div
+              class=" rounded-[8px] w-[360px] max-xs:w-full py-8 max-xs:py-2 px-10 max-xs:px-4 hover:scale-105 ease-in duration-300 bg-gradient-to-b from-white via-[#647B6400] via-80% to-[#647B64C4]">
+              <div class="flex justify-between">
+                <img src="./assets/man.png" alt="" class="max-xs:w-[107px]">
+                <div class="w-[33.3%]">
+                  <h1 class="text-base font-medium text-gray max-xs:text-sm">CTO May & Baker</h1>
+                  <p class="font-normal text-sm text-l_gray max-xs:text-xs">Oshinuwa</p>
+                </div>
+              </div>
+              <p class="text-base font-normal text-l_gray mt-6 italic max-xs:text-sm">“Lorem ipsum dolor sit amet,
+                consectetur adipiscing
+                elit. Sit quis vitae“</p>
+            </div>
+            <div
+              class=" rounded-[8px] w-[360px] max-xs:w-full py-8 max-xs:py-2 px-10 max-xs:px-4 bg-gradient-to-b hover:scale-105 ease-in duration-300 from-white via-[#647B6400] via-80% to-[#647B64C4]">
+              <div class="flex justify-between">
+                <img src="./assets/girl-mid.png" alt="" class="max-xs:w-[107px]">
+                <div class="w-[33.3%]">
+                  <h1 class="text-base font-medium text-gray max-xs:text-sm">CTO May & Baker</h1>
+                  <p class="font-normal text-sm text-l_gray max-xs:text-xs">Oshinuwa</p>
+                </div>
+              </div>
+              <p class="text-base font-normal text-l_gray mt-6 italic max-xs:text-sm">“Lorem ipsum dolor sit amet,
+                consectetur adipiscing
+                elit. Sit quis vitae“</p>
+            </div>
+            <div
+              class=" rounded-[8px] w-[360px] max-xs:w-full py-8 max-xs:py-2 px-10 max-xs:px-4 hover:scale-105 ease-in duration-300 bg-gradient-to-b from-white via-[#647B6400] via-80% to-[#647B64C4]">
+              <div class="flex justify-between">
+                <img src="./assets/man-r.png" alt="" class=" max-xs:w-[107px]">
+                <div class="w-[33.3%]">
+                  <h1 class="text-base font-medium text-gray max-xs:text-sm">CTO May & Baker</h1>
+                  <p class="font-normal text-sm text-l_gray max-xs:text-xs">Oshinuwa</p>
+                </div>
+              </div>
+              <p class="text-base font-normal text-l_gray mt-6 italic max-xs:text-sm">“Lorem ipsum dolor sit amet,
+                consectetur adipiscing
+                elit. Sit quis vitae“</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer class="bg-[#F0DCC5]">
+    <div class="font-inter mx-auto w-4/5 flex justify-between pt-8 pb-8 max-xs:flex-col max-xs:gap-10">
+      <div class="">
+        <img src="./assets/logo_svg.svg" alt="">
+        <p class="w-[249px] mt-4 font-normal text-l_gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Sit quis vitae nullam aliquet</p>
+        <p class="w-[160px] mt-4 font-normal text-l_gray text-sm">Copyright © 2021 AWESOME.</p>
+        <div class="flex gap-4 mt-7">
+          <div class="bg-[#D6C6B2] w-8 h-8 rounded-full flex justify-center items-center"><i
+              class="text-green text-base fa-brands fa-instagram"></i></div>
+          <div class="bg-[#D6C6B2] w-8 h-8 rounded-full flex justify-center items-center"><i
+              class="text-green text-base fa-solid fa-basketball"></i></div>
+          <div class="bg-[#D6C6B2] w-8 h-8 rounded-full flex justify-center items-center"><i
+              class="text-green text-base fa-brands fa-twitter"></i></div>
+          <div class="bg-[#D6C6B2] w-8 h-8 rounded-full flex justify-center items-center"><i
+              class="text-green text-base fa-brands fa-youtube"></i></div>
+        </div>
+      </div>
+      <div class="flex gap-[120px] max-xs:gap-0 max-xs:justify-between">
+        <div class="">
+          <h1 class="font-medium text-xl text-green">Company</h1>
+          <p class="font-normal text-base text-gray mt-6">Lorem Ipsum 1</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem 2</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem 3</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem 4</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem 5</p>
+        </div>
+        <div class="">
+          <h1 class="font-medium text-xl text-green">Support</h1>
+          <p class="font-normal text-base text-gray mt-6">Lorem Ipsum 6</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem Ipsum 7</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem Ipsum 8</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem Ipsum 9</p>
+          <p class="font-normal text-base text-gray mt-3">Lorem Ipsum 10</p>
+        </div>
+      </div>
+      <div class="">
+        <h1 class="font-medium text-xl text-green">SEND MESSAGE</h1>
+        <label for="email"></label>
+        <input type="email" placeholder="Your email address"
+          class=" outline-none mt-3 w-[283px] max-xs:w-full bg-white pt-3 pl-6 pb-[77px] rounded-[8px] placeholder:text-l_gray placeholder:font-normal placeholder:text-sm">
+        <div
+          class="text-l_white mt-6 flex items-center justify-between w-[283px] max-xs:w-full rounded bg-gradient-to-r from-[#647B64] to-[#66AC66] active:bg-gradient-to-l shadow-2xl px-[22px] py-[20px] max-xs:px-[12px] max-xs:py-[10px]">
+          <button class="font-black text-sm  text-start">GET STARTED</button>
+          <i class="fa-solid fa-arrow-right text-3xlmax-xs:text-sm"></i>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script>
+    const btnUp = {
+      el: document.querySelector('.btn-up'),
+      show() {
+        this.el.classList.remove('btn-up_hide');
+      },
+      hide() {
+        this.el.classList.add('btn-up_hide');
+      },
+      addEventListener() {
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          scrollY > 300 ? this.show() : this.hide();
+        });
+        document.querySelector('.btn-up').onclick = () => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+
+    btnUp.addEventListener();
+  </script>
+</body>
+
+</html>
